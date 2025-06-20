@@ -1,4 +1,4 @@
-// src/components/JoinWaitlistModal.jsx
+
 import React, { useState } from 'react';
 import {
   Dialog,

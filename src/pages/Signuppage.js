@@ -57,7 +57,7 @@ const Signup = () => {
         severity: 'success',
         message: 'Signup successful! Redirecting...',
       });
-      setTimeout(() => navigate('/dashboard'), 1500);  // Redirect to dashboard directly
+      setTimeout(() => navigate('/dashboard'), 1500);  
     } catch (err) {
       console.error('❌ Signup error:', err.response?.data || err.message);
       setToast({
@@ -92,7 +92,7 @@ const Signup = () => {
           py: 4,
         }}
       >
-        {/* Left Side - Branding */}
+        
         <Box
           sx={{
             flex: 1,
@@ -144,7 +144,7 @@ const Signup = () => {
           </Typography>
         </Box>
 
-        {/* Right Side - Signup Form */}
+        
         <Box
           sx={{
             flex: 1,

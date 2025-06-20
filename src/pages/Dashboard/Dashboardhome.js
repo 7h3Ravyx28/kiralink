@@ -42,7 +42,7 @@ const Dashboard = () => {
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* ✅ Stats Boxes */}
+      
       <Grid container spacing={2} mb={2}>
         {[
           { label: 'Properties', icon: <HomeIcon sx={{ fontSize: 32 }} />, value: 10 },
@@ -63,14 +63,14 @@ const Dashboard = () => {
         ))}
       </Grid>
 
-      {/* ✅ View Maintenance Appointments Button */}
+      
       <Box mb={3} textAlign="center">
         <Button variant="contained" color="primary" sx={{ borderRadius: 2, px: 4 }}>
           View Maintenance Appointments
         </Button>
       </Box>
 
-      {/* ✅ Recent Maintenance Requests */}
+      
       <Typography variant="h6" mb={1}>Recent Maintenance Requests</Typography>
       <TableContainer component={Paper} sx={{ mb: 3 }}>
         <Table>
@@ -95,7 +95,7 @@ const Dashboard = () => {
         </Table>
       </TableContainer>
 
-      {/* ✅ Recent Payments */}
+    
       <Typography variant="h6" mb={1}>Recent Payments</Typography>
       <TableContainer component={Paper} sx={{ mb: 3 }}>
         <Table>
@@ -118,7 +118,7 @@ const Dashboard = () => {
         </Table>
       </TableContainer>
 
-      {/* ✅ Tenant Messages */}
+      
       <Typography variant="h6" mb={1}>Tenant Messages</Typography>
       <Box mb={3}>
         {tenantMessages.map((m, i) => (
@@ -133,7 +133,7 @@ const Dashboard = () => {
         ))}
       </Box>
 
-      {/* ✅ Footer */}
+      
       <Box
         sx={{
           mt: 4,
@@ -144,13 +144,13 @@ const Dashboard = () => {
           alignItems: 'center',
         }}
       >
-        {/* Left: Social Icons */}
+        
         <Stack direction="row" spacing={1}>
           <IconButton href="#"><Facebook fontSize="small" /></IconButton>
           <IconButton href="#"><Twitter fontSize="small" /></IconButton>
           <IconButton href="#"><Instagram fontSize="small" /></IconButton>
         </Stack>
-        {/* Right: Rights */}
+        
         <Typography variant="caption">&copy; {new Date().getFullYear()} All rights reserved.</Typography>
       </Box>
     </Box>

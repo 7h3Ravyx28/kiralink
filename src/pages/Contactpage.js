@@ -85,7 +85,7 @@ const ContactPage = () => {
                 </Stack>
               </Grid>
 
-              {/* Extra-Wide Form */}
+              
               <Grid item xs={12} md={8}>
                 <form
                   action="https://formspree.io/f/YOUR_FORM_ID_HERE"
@@ -100,7 +100,7 @@ const ContactPage = () => {
                       InputProps={{
                         sx: {
                           fontSize: '1.15rem',
-                          py: 2, // increased padding
+                          py: 2, 
                           px: 2,
                         },
                       }}

@@ -14,28 +14,28 @@ import ToastAlert from '../../components/toastalert';
 
 const LogouttPage = () => {
   const navigate = useNavigate();
-  const [open, setOpen] = useState(true);           // dialog visibility
-  const [loading, setLoading] = useState(false);    // logout progress
+  const [open, setOpen] = useState(true);           
+  const [loading, setLoading] = useState(false);    
   const [toast, setToast] = useState({ open: false, severity: 'success', message: '' });
 
   const handleConfirm = () => {
-    setLoading(true); // show spinner
+    setLoading(true); 
     setTimeout(() => {
-      // 🧹 Clear session
+      
       localStorage.removeItem('token');
       localStorage.removeItem('kiralinkUser');
 
       setLoading(false);
       setToast({ open: true, severity: 'success', message: 'Logged out successfully!' });
 
-      // 🕐 Auto-redirect after 1.5s
+      
       setTimeout(() => navigate('/login'), 1500);
-    }, 1000); // simulate logout delay
+    }, 1000); 
   };
 
   const handleCancel = () => {
     setOpen(false);
-    navigate('/dashboard'); // back to dashboard
+    navigate('/dashboard'); 
   };
 
   return (

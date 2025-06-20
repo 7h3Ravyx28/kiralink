@@ -6,7 +6,7 @@ import {
   Stack,
 } from '@mui/material';
 import { styled } from '@mui/system';
-import JoinWaitlistModal from '../components/JoinWaitlist'; // adjust path if needed
+import JoinWaitlistModal from '../components/JoinWaitlist'; 
 
 // Wrapper styling
 const SectionWrapper = styled(Box)(() => ({
@@ -57,7 +57,7 @@ const WaitlistSection = () => {
         </Button>
       </Stack>
 
-      {/* 🔥 Popup Modal */}
+      
       <JoinWaitlistModal open={openModal} onClose={() => setOpenModal(false)} />
     </SectionWrapper>
   );

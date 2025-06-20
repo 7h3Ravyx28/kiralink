@@ -2,7 +2,7 @@ import React from 'react';
 import { Snackbar, Alert } from '@mui/material';
 
 const ToastAlert = ({ open, onClose, severity = 'success', message }) => {
-  // Custom color for success variant
+  
   const customStyle = {
     success: {
       backgroundColor: '#00796B',

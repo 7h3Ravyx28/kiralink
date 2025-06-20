@@ -33,11 +33,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const correctEmail = 'opitechteam@gmail.com';
+    const correctEmail = 'opitechteam@gmail.com';  //untill we design backend
     const correctPassword = 'opitech@1234@turkey';
 
     if (form.email === correctEmail && form.password === correctPassword) {
-      localStorage.setItem('token', 'dummy-token'); // placeholder token
+      localStorage.setItem('token', 'dummy-token'); 
       localStorage.setItem(
         'kiralinkUser',
         JSON.stringify({ username: 'Opitech Team', email: correctEmail })
@@ -75,7 +75,7 @@ const Login = () => {
           py: 4,
         }}
       >
-        {/* Left Side - Branding */}
+        
         <Box
           sx={{
             flex: 1,
@@ -112,7 +112,7 @@ const Login = () => {
           </Typography>
         </Box>
 
-        {/* Right Side - Login Form */}
+        
         <Box sx={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', p: 4 }}>
           <Paper elevation={4} sx={{ p: 4, width: '100%', maxWidth: 420 }}>
             <Typography variant="h4" sx={{ fontFamily: 'Rajdhani', mb: 3, color: '#00796B', fontWeight: 'bold', textAlign: 'center' }}>

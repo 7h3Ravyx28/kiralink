@@ -54,7 +54,7 @@ const Tenants = () => {
 
   return (
     <Box sx={{ p: 3 }}>
-      {/*  Header with Title and Add Tenant Button */}
+      
       <Box
         sx={{
           mb: 2,
@@ -81,7 +81,7 @@ const Tenants = () => {
         </Button>
       </Box>
 
-      {/*  Tenants Table */}
+      
       <Paper sx={{ mb: 4, overflowX: 'auto' }} elevation={2}>
         <Table>
           <TableHead>
@@ -113,7 +113,7 @@ const Tenants = () => {
         </Table>
       </Paper>
 
-      {/*  Footer */}
+      
       <Box
         sx={{
           mt: 4,

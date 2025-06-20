@@ -29,7 +29,7 @@ const CalendarPage = () => {
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* Header */}
+      
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={3}>
         <Typography variant="h4" sx={{ color: '#00796B', fontWeight: 'bold', fontFamily: 'Rajdhani' }}>
           {currentDate.format('MMMM YYYY')}
@@ -40,7 +40,7 @@ const CalendarPage = () => {
         </Box>
       </Stack>
 
-      {/* Days of the week */}
+      
       <Grid container spacing={1} mb={1}>
         {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day) => (
           <Grid item xs={12/7} key={day}>
@@ -51,13 +51,13 @@ const CalendarPage = () => {
         ))}
       </Grid>
 
-      {/* Empty grid to align first day */}
+      
       <Grid container spacing={1} mb={1}>
         {[...Array(firstDayOfMonth)].map((_, index) => (
           <Grid item xs={12/7} key={`empty-${index}`}></Grid>
         ))}
 
-        {/* Month days */}
+        
         {[...Array(daysInMonth)].map((_, index) => {
           const dateNum = index + 1;
           return (

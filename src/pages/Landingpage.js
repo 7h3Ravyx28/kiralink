@@ -1,4 +1,4 @@
-// src/pages/LandingPage.jsx
+
 import React from 'react';
 import { Box } from '@mui/material';
 import Navbar from '../components/Navbar';

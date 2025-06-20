@@ -27,12 +27,12 @@ const SettingsPage = () => {
   };
   const handleSave = () => {
     console.log('💾 Saved settings:', settings);
-    // Implement save API call here
+    // save API call 
   };
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* Title */}
+      
       <Typography
         variant="h4"
         sx={{ mb: 3, color: '#00796B', fontWeight: 'bold', fontFamily: 'Rajdhani' }}
@@ -40,7 +40,7 @@ const SettingsPage = () => {
         Settings
       </Typography>
 
-      {/* Form */}
+      
       <Paper sx={{ p: 4, maxWidth: 500 }} elevation={2}>
         <Stack spacing={2}>
           <TextField
@@ -81,7 +81,7 @@ const SettingsPage = () => {
         </Stack>
       </Paper>
 
-      {/* Footer */}
+      
       <Box
         sx={{
           mt: 4,

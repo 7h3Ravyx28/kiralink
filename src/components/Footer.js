@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { styled } from "@mui/system";
 import Logo from "../assets/kiralogo.jpg";
 
-// Styled container
+
 const FooterContainer = styled(Box)({
   backgroundColor: "#ffffff",
   padding: "40px 20px",

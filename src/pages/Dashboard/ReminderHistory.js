@@ -14,7 +14,7 @@ import {
 import { Facebook, Twitter, Instagram } from '@mui/icons-material';
 
 const ReminderHistory = () => {
-  // Dummy data for demo — replace with fetched data
+  
   const reminders = [
     {
       id: 1,
@@ -47,7 +47,7 @@ const ReminderHistory = () => {
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* Title */}
+      
       <Typography
         variant="h4"
         sx={{ mb: 2, color: '#00796B', fontWeight: 'bold', fontFamily: 'Rajdhani' }}
@@ -55,7 +55,7 @@ const ReminderHistory = () => {
         Reminder History
       </Typography>
 
-      {/* Table */}
+      
       <Paper sx={{ mb: 4, overflowX: 'auto' }} elevation={2}>
         <Table>
           <TableHead>
@@ -90,7 +90,7 @@ const ReminderHistory = () => {
         </Table>
       </Paper>
 
-      {/* Footer */}
+      
       <Box
         sx={{
           mt: 4,

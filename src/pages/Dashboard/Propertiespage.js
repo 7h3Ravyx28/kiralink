@@ -29,7 +29,7 @@ const Properties = () => {
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* ✅ Total Properties */}
+      
       <Paper
         sx={{
           p: 3,
@@ -46,7 +46,7 @@ const Properties = () => {
         </Typography>
       </Paper>
 
-      {/* ✅ Properties Table */}
+      
       <Typography variant="h6" mb={1}>Your Properties</Typography>
       <TableContainer component={Paper} sx={{ mb: 3 }}>
         <Table>
@@ -69,7 +69,7 @@ const Properties = () => {
         </Table>
       </TableContainer>
 
-      {/* ✅ Add Properties Button */}
+      
       <Box textAlign="center" mb={4}>
         <Button
           component={Link}
@@ -82,7 +82,7 @@ const Properties = () => {
         </Button>
       </Box>
 
-      {/* ✅ Footer */}
+      
       <Box
         sx={{
           mt: 4,
@@ -93,13 +93,13 @@ const Properties = () => {
           alignItems: 'center',
         }}
       >
-        {/* Left: Social Icons */}
+        
         <Stack direction="row" spacing={1}>
           <IconButton href="#"><Facebook fontSize="small" /></IconButton>
           <IconButton href="#"><Twitter fontSize="small" /></IconButton>
           <IconButton href="#"><Instagram fontSize="small" /></IconButton>
         </Stack>
-        {/* Right: Rights */}
+        
         <Typography variant="caption">&copy; {new Date().getFullYear()} All rights reserved.</Typography>
       </Box>
     </Box>

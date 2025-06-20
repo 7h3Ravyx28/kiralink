@@ -42,7 +42,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <Routes>
-          {/* Public Routes */}
+          
           <Route path="/" element={<LandingPage />} />
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/pricing" element={<PricingPage />} />
@@ -51,7 +51,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           
 
-          {/* Protected Dashboard Routes */}
+          
           <Route
             path="/dashboard"
             element={
@@ -69,7 +69,7 @@ function App() {
              <Route path="history" element={<ReminderHistory />} />
              <Route path="settings" element={<SettingsPage />} />
              <Route path="logout" element={<LogouttPage />} />
-            {/* Add more like tenants, calendar etc. */}
+            
           </Route>
         </Routes>
       </Router>

@@ -52,7 +52,7 @@ const FeaturesPage = () => {
     <>
       <Navbar />
 
-      {/* 🔹 Feature Cards Section */}
+      
       <Box sx={{ py: 8, backgroundColor: '#f5f5f5', fontFamily: 'Rajdhani, sans-serif' }}>
         <Container>
           <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 'bold', color: '#00332E' }}>
@@ -98,7 +98,7 @@ const FeaturesPage = () => {
         </Container>
       </Box>
 
-      {/* 🔹 Rent Trends Section */}
+      
       <Box sx={{ py: 8, backgroundColor: '#ffffff' }}>
         <Container>
           <Grid container spacing={4} alignItems="center">
@@ -160,7 +160,7 @@ const FeaturesPage = () => {
       </Box>
 
       
-{/* 🔹 Rent Portfolio Confidence Section */}
+
 <Box sx={{ py: 10, backgroundColor: '#F8FFFE' }}>
   <Container>
     <Grid
@@ -171,7 +171,7 @@ const FeaturesPage = () => {
         alignItems: 'center',
       }}
     >
-      {/* 📸 Image Left */}
+      
       <Grid item xs={12} md={6}>
         <Box
           component="img"
@@ -188,7 +188,7 @@ const FeaturesPage = () => {
         />
       </Grid>
 
-      {/* 🧠 Text Right */}
+      
       <Grid item xs={12} md={6}>
         <Typography
           variant="h4"
@@ -240,7 +240,7 @@ const FeaturesPage = () => {
   </Container>
 </Box>
 
-{/* 🔹 Call-to-Action Hero Section */}
+
 <Box
   sx={{
     py: 12,

@@ -28,14 +28,14 @@ const AddTenant = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // make an API call to save the tenant
+    // API call
     console.log('💾 Save tenant:', form);
-    navigate('/dashboard/tenants'); // go back to tenant list after add
+    navigate('/dashboard/tenants'); 
   };
 
   return (
     <Box sx={{ p: 3 }}>
-      {/*  Page Title */}
+      
       <Typography
         variant="h4"
         sx={{ mb: 2, color: '#00796B', fontWeight: 'bold', fontFamily: 'Rajdhani' }}
@@ -43,7 +43,7 @@ const AddTenant = () => {
         Add Tenant
       </Typography>
 
-      {/* ✅ Form */}
+  
       <Paper elevation={2} sx={{ p: 3, maxWidth: 500 }}>
         <form onSubmit={handleSubmit}>
           <TextField
@@ -106,7 +106,7 @@ const AddTenant = () => {
         </form>
       </Paper>
 
-      {/* ✅ Footer */}
+      
       <Box
         sx={{
           mt: 4,

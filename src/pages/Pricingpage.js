@@ -53,7 +53,7 @@ const PricingPage = () => {
     <>
       <Navbar />
       <Box sx={{ fontFamily: 'Poppins', backgroundColor: '#f9fafb', minHeight: '100vh' }}>
-        {/* Hero Section */}
+        
         <Box sx={{ textAlign: 'center', py: 10, px: 2 }}>
           <Button
             sx={{
@@ -81,7 +81,7 @@ const PricingPage = () => {
           </Typography>
         </Box>
 
-        {/* Pricing Cards */}
+        
         <Grid container spacing={4} justifyContent="center" sx={{ px: 3, pb: 10 }}>
           {planData.map((plan, i) => (
             <Grid item xs={12} md={6} key={i}>
@@ -130,7 +130,7 @@ const PricingPage = () => {
 
                   <Divider sx={{ mb: 2 }} />
 
-                  {/* Features */}
+                  
                   {plan.features.map((feat, idx) => (
                     <Box
                       key={idx}
@@ -174,7 +174,7 @@ const PricingPage = () => {
           ))}
         </Grid>
 
-        {/* FAQ Section */}
+        
         <Box sx={{ px: 3, pb: 10, maxWidth: 900, mx: 'auto' }}>
           <Typography
             variant="subtitle2"

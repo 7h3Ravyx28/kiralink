@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=kiralink
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=kiralinkdb
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kiralink -d kiralinkdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
+    volumes:
+      - ./kiralink-backend:/app
+      - ./kiralink-backend/logs:/app/logs
+      - ./kiralink-backend/static/invoices:/app/static/invoices
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./kiralink-backend/.env.example
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: celery -A app.celery_worker.celery_app worker --loglevel=info
+    volumes:
+      - ./kiralink-backend:/app
+    env_file:
+      - ./kiralink-backend/.env.example
+    depends_on:
+      app:
+        condition: service_started
+
+volumes:
+  postgres_data: 
